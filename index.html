@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Management System</h1>
+
+        <div class="event-form">
+            <input type="text" id="eventTitle" placeholder="Event Title" required>
+            <input type="datetime-local" id="eventDateTime" required>
+            <button id="addEventBtn">Add Event</button>
+        </div>
+
+        <h2>Upcoming Events</h2>
+        <ul id="eventList"></ul>
+
+        <div id="reminder" class="reminder">
+            <p id="reminderText"></p>
+            <button id="closeReminder">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
